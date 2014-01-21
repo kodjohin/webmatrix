@@ -75,13 +75,12 @@ function draw(){
     stats.end();
 }
 
-/*window.onresize = function(){
+window.onresize = function(){
     cW = window.innerWidth;
     cH = window.innerHeight;
     ctx.canvas.width  = cW;
     ctx.canvas.height = cH;
-    draw();
-}*/
+}
 window.onblur = function (){
     if (request){
         cancelRequestAnimFrame(request);
